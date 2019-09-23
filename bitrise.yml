@@ -3,8 +3,6 @@ default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
 
 app:
   envs:
-  - SAMPLE_APP_URL: https://github.com/bitrise-samples/sample-apps-itunes-connect-beta-test.git
-  - BRANCH: master
   - BITRISE_PROJECT_PATH: ./Bitrise-iTunesConnectBetaTest/Bitrise-iTunesConnectBetaTest.xcodeproj
   - BITRISE_SCHEME: Bitrise-iTunesConnectBetaTest
   - INFO_PLIST_PATH: ./Bitrise-iTunesConnectBetaTest/Bitrise-iTunesConnectBetaTest/Info.plist
@@ -13,6 +11,7 @@ app:
   - BITRISE_BUILD_NUMBER: $BITRISE_BUILD_NUMBER
   - BITRISE_BUILD_VERSION_OFFSET: $BITRISE_BUILD_VERSION_OFFSET
 
+  # defined in my project
   - ITUNES_CONNECT_USER: $APPLE_ID
   - ITUNES_CONNECT_PASSWORD: $APPLE_ID_PWD
   - ITUNES_CONNECT_TEAM_ID: $TEAM_ID
