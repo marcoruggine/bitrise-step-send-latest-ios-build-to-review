@@ -7,6 +7,12 @@ app:
   - BITRISE_SCHEME: Bitrise-iTunesConnectBetaTest
   - INFO_PLIST_PATH: ./Bitrise-iTunesConnectBetaTest/Bitrise-iTunesConnectBetaTest/Info.plist
 
+  # If you want to share this step into a StepLib
+  - BITRISE_STEP_ID: bitrise-step-send-latest-ios-build-to-review
+  - BITRISE_STEP_VERSION: "0.0.1"
+  - BITRISE_STEP_GIT_CLONE_URL: https://github.com/marcoruggine/bitrise-step-send-latest-ios-build-to-review.git
+  - MY_STEPLIB_REPO_FORK_GIT_URL: https://github.com/marcoruggine/bitrise-step-send-latest-ios-build-to-review
+
   # define these in your .bitrise.secrets.yml
   - BITRISE_BUILD_NUMBER: $BITRISE_BUILD_NUMBER
   - BITRISE_BUILD_VERSION_OFFSET: $BITRISE_BUILD_VERSION_OFFSET
